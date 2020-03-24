@@ -10,7 +10,7 @@ import numpy
 import time
 from imutils import face_utils
 
-path = '/utils/shape_predictor_68_face_landmarks (1).dat'
+path = 'utils/shape_predictor_68_face_landmarks (1).dat'
 # initialize dlib's face detector (HOG-based) and then create
 # the facial landmark predictor
 print("[INFO] loading facial landmark predictor...")
