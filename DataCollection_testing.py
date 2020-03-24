@@ -5,7 +5,7 @@ import numpy
 import time
 from imutils import face_utils  
 
-path = '(DIRECTORYPATH)/shape_predictor_68_face_landmarks (1).dat'
+path = 'utils/shape_predictor_68_face_landmarks (1).dat'
 print("[INFO] loading facial landmark predictor...")
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(path)
