@@ -48,10 +48,9 @@ while (vs.isOpened()):
         white = cv2.bitwise_and(frame, frame, mask=white_mask)
         finalMask = cv2.copyTo(fframe, white)
         frame = finalMask
-
-    cv2.imshow("Frame", frame)
-    if ret == False:
-        break
+        cv2.imshow("Frame", frame)
+        cv2.waitkey(1)
+    
     if i !=201:
         a = cv2.imwrite('TestPics'+str(i)+'.jpg',frame)
         i+=1
