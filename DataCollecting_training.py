@@ -64,6 +64,7 @@ while (vs.isOpened()):
         finalMask = cv2.copyTo(fframe, white)
         frame = finalMask
         cv2.imshow("Frame", frame)
+        cv2.waitkey(1)
         
     if i !=901:
         cv2.imwrite('TestPics'+str(i)+'.jpg',frame)
