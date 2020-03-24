@@ -52,7 +52,7 @@ while (vs.isOpened()):
     cv2.imshow("Frame", frame)
     if ret == False:
         break
-    if i !=213:
+    if i !=201:
         a = cv2.imwrite('TestPics'+str(i)+'.jpg',frame)
         i+=1
     else:
